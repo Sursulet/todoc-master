@@ -7,5 +7,5 @@
 ![image](uml/UseCaseDiagram.png)
 
  ## Class diagram
-![image](uml/TableClassDiagram.bmp)
-![image](uml/ClassDiagram.bmp)
+![image](uml/TableClassDiagram.png)
+![image](uml/ClassDiagram.png)
