@@ -29,7 +29,6 @@ public abstract class CleanUpDatabase extends RoomDatabase {
                 if(INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             CleanUpDatabase.class,"CleanUpDatabase")
-                            .fallbackToDestructiveMigration()
                             .addCallback(prepopulateDatabase())
                             .build();
                 }

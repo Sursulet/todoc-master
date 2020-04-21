@@ -128,22 +128,22 @@ public class Task {
     }
 
     /**
-     * Comparator to sort task by project name from A to Z
+     * Comparator to sort task from A to Z
      */
     public static class TaskAZComparator implements Comparator<Task> {
         @Override
         public int compare(Task left, Task right) {
-            return left.getProject().getName().compareTo(right.getProject().getName());
+            return left.name.compareTo(right.name);
         }
     }
 
     /**
-     * Comparator to sort task by project name from Z to A
+     * Comparator to sort task from Z to A
      */
     public static class TaskZAComparator implements Comparator<Task> {
         @Override
         public int compare(Task left, Task right) {
-            return right.getProject().getName().compareTo(left.getProject().getName());
+            return right.name.compareTo(left.name);
         }
     }
 
