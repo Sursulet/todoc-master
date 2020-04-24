@@ -2,7 +2,7 @@
  
  ## MPD
 ![image](uml/newmpd.png)
-![image](uml/mpdWB.png)
+![image](uml/mdpWB.png)
 
  ## Use case diagram
 ![image](uml/UseCaseDiagram.png)
