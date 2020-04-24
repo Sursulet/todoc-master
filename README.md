@@ -1,7 +1,8 @@
 # todoc-master
  
  ## MPD
-![image](uml/mpd.png)
+![image](uml/newmpd.png)
+![image](uml/mpdWB.png)
 
  ## Use case diagram
 ![image](uml/UseCaseDiagram.png)
