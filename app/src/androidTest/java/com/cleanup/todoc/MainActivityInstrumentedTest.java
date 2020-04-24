@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.cleanup.todoc.ui.MainActivity;
 
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,6 +33,12 @@ import static org.junit.Assert.assertThat;
 public class MainActivityInstrumentedTest {
     @Rule
     public ActivityTestRule<MainActivity> rule = new ActivityTestRule<>(MainActivity.class);
+
+    @Before
+    public void setUp() {
+        MainActivity activity = rule.getActivity();
+        activity.getApplicationContext().deleteDatabase("CleanUpDatabase");
+    }
 
     @Test
     public void addAndRemoveTask() {
